@@ -22,7 +22,7 @@
 - [ ] Check-in can only be validated by administrators;
 - [ ] The gym can only be registered by administrators;
 
-## RNFs (Requisitos não-funcionais)
+## Non-functional Requirements
 
 - [ ] User password needs to be encrypted;
 - [ ] Application data needs to be persisted in a PostgreSQL database;
