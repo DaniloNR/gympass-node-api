@@ -1,6 +1,21 @@
 import fastify from "fastify";
 import { AppRoutes } from "./http/routes";
+import { ZodError } from "zod";
+import { env } from "@/env";
 
 export const app = fastify();
 
 app.register(AppRoutes);
+
+app.setErrorHandler((error, _, reply) => {
+  switch (true) {
+    case error instanceof ZodError:
+      return reply
+        .status(400)
+        .send({ message: "Validation error.", issues: error.format() });
+    default:
+      if (env.NODE_ENV !== "prod") console.error(error);
+      // TODO: Here we should log to a external tool like DataDog/NewRelic/Sentry
+      return reply.status(500).send({ message: "Internal server error." });
+  }
+});
