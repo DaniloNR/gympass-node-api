@@ -17,7 +17,7 @@ export async function register(request: Req, reply: Rep): Promise<Rep> {
     const usersRepository = new PrismaUsersRepository();
     const registerUseCase = new RegisterUseCase(usersRepository);
 
-    await registerUseCase.register({
+    await registerUseCase.execute({
       name,
       email,
       password,
