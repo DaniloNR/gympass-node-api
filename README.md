@@ -3,7 +3,7 @@
 # Functional Requirements
 
 - [x] User registration must be possible;
-- [ ] User authentication must be possible;
+- [x] User authentication must be possible;
 - [ ] It must be possible to retrieve the profile of a logged-in user;
 - [ ] It must be possible to retrieve the number of check-ins performed by the logged-in user;
 - [ ] It must be possible for the user to retrieve their check-in history;
