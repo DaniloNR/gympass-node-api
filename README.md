@@ -11,7 +11,7 @@
 - [ ] It must be possible for the user to search for gyms by name;
 - [x] It must be possible for the user to check-in at a gym;
 - [ ] User check-in must be validated;
-- [ ] It must be possible to register a gym;
+- [x] It must be possible to register a gym;
 
 ## Business Rules
 

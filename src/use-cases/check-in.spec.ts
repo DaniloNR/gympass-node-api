@@ -8,19 +8,18 @@ let checkInsRepository: InMemoryCheckInsRepository;
 let gymsRepository: InMemoryGymsRepository;
 let sut: CheckInUseCase; // sut = system under test
 
-describe("Authenticate Use Case", () => {
-  beforeEach(() => {
+describe("Check In Use Case", () => {
+  beforeEach(async () => {
     checkInsRepository = new InMemoryCheckInsRepository();
     gymsRepository = new InMemoryGymsRepository();
     sut = new CheckInUseCase(checkInsRepository, gymsRepository);
 
-    gymsRepository.items.push({
-      id: "gym-01",
-      title: "JavaScript Gym",
-      description: "",
-      phone: "",
-      latitude: new Decimal(43.718371),
-      longitude: new Decimal(-79.5428637),
+    await gymsRepository.create({
+      title: "Js Gym",
+      description: null,
+      phone: null,
+      latitude: 43.718371,
+      longitude: -79.5428637,
     });
 
     vi.useFakeTimers();
