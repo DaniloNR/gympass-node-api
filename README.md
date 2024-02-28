@@ -6,7 +6,7 @@
 - [x] User authentication must be possible;
 - [x] It must be possible to retrieve the profile of a logged-in user;
 - [ ] It must be possible to retrieve the number of check-ins performed by the logged-in user;
-- [ ] It must be possible for the user to retrieve their check-in history;
+- [x] It must be possible for the user to retrieve their check-in history;
 - [ ] It must be possible for the user to search for nearby gyms;
 - [ ] It must be possible for the user to search for gyms by name;
 - [x] It must be possible for the user to check-in at a gym;
@@ -26,5 +26,5 @@
 
 - [x] User password needs to be encrypted;
 - [x] Application data needs to be persisted in a PostgreSQL database;
-- [ ] All data lists need to be paginated with 20 items per page;
+- [x] All data lists need to be paginated with 20 items per page;
 - [ ] User must be identified by a JWT (JSON Web Token);
