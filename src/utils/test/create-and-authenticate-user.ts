@@ -10,7 +10,7 @@ export async function createAndAuthenticateUser(app: FastifyInstance) {
 
   const {
     body: { token },
-  } = await request(app.server).post("/sessions").send({
+  } = await request(app.server).post("/session").send({
     email: "johndoe@example.com",
     password: "123456",
   });
