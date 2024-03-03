@@ -1,6 +1,5 @@
 node_modules
 build
-prisma/migrations/migration_lock.toml
 .env
 coverage
 .DS_Store
