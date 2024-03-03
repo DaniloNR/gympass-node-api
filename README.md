@@ -27,4 +27,4 @@
 - [x] User password needs to be encrypted;
 - [x] Application data needs to be persisted in a PostgreSQL database;
 - [x] All data lists need to be paginated with 20 items per page;
-- [ ] User must be identified by a JWT (JSON Web Token);
+- [x] User must be identified by a JWT (JSON Web Token);
