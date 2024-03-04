@@ -11,8 +11,3 @@ updates:
     reviewers:
       - "DaniloNR"
     versioning-strategy: "widen"
-    actions:
-      - type: "run_workflow"
-        workflow: "run-unit-tests"
-      - type: "run_workflow"
-        workflow: "run-e2e-tests"
