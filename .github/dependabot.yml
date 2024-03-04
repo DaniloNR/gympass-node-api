@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore(deps):"
+    labels:
+      - "dependencies"
+    reviewers:
+      - "DaniloNR"
+    versioning-strategy: "widen"
+    versions:
+      - dependency-name: "*"
+        update-type: "minor"
+      - dependency-name: "*"
+        update-type: "patch"
+    actions:
+      - type: "run_workflow"
+        workflow: "run-unit-tests"
+      - type: "run_workflow"
+        workflow: "run-e2e-tests"
