@@ -120,7 +120,7 @@ pnpm test
 E2E tests:
 
 ```sh
-pnpm start:dev
+pnpm test:e2e
 ```
 
 if you want to run on watch mode, just add `:watch` on the script and run.
