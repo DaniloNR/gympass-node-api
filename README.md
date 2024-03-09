@@ -1,27 +1,22 @@
 # Gympass Node API
 
+[![Node.js](https://img.shields.io/badge/Node.js-20.11.24-green?style=flat-square&logo=node.js)](https://nodejs.org/)
+[![Fastify](https://img.shields.io/badge/Fastify-4.26.2-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)
+[![Prisma](https://img.shields.io/badge/Prisma-5.10.2-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)
+[![Vitest](https://img.shields.io/badge/Vitest-1.3.1-red?style=flat-square)](https://github.com/vitejs/vitest)
+[![supertest](https://img.shields.io/badge/supertest-6.3.4-orange?style=flat-square)](https://github.com/visionmedia/supertest)
+[![bcryptjs](https://img.shields.io/badge/bcryptjs-2.4.3-blue?style=flat-square)](https://github.com/dcodeIO/bcrypt.js)
+[![dayjs](https://img.shields.io/badge/dayjs-1.11.10-yellow?style=flat-square)](https://github.com/iamkun/dayjs)
+[![Zod](https://img.shields.io/badge/Zod-3.22.4-green?style=flat-square)](https://github.com/colinhacks/zod)
+[![eslint](https://img.shields.io/badge/eslint-8.57.0-blue?style=flat-square&logo=eslint)](https://eslint.org/)
+[![dotenv](https://img.shields.io/badge/dotenv-16.4.5-yellow?style=flat-square)](https://github.com/motdotla/dotenv)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-5.10.2-blue?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/Docker-25.0.3-blue?style=flat-square&logo=docker)](https://www.docker.com/)
+[![pnpm](https://img.shields.io/badge/pnpm-8.9.2-blue?style=flat-square&logo=pnpm)](https://pnpm.io/)
+
 **gympass-node-api** is a Node.js API designed to manage users' gym memberships
 across multiple gyms. It is built entirely in TypeScript and utilizes SOLID
 principles on its implementation.
-
-## Technologies Used
-
-- **Node.js**: Main runtime environment
-- **Fastify**: Main framework
-- **Prisma**: ORM (Object-Relational Mapping)
-- **Vitest**: Unit and E2E testing
-- **supertest**: HTTP request testing
-- **bcryptjs**: Password hashing
-- **dayjs**: Date calculation
-- **Zod**: Validation library
-- **eslint**: Code linting
-- **dotenv**: Environment variable management
-
-## Database
-
-- **PostgreSQL**: Relational database system
-- **Docker**: Containerization
-- **In-memory database**: For unit testing
 
 ## Getting Started
 
