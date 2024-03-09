@@ -64,13 +64,13 @@ docker compose stop
 pnpm migrate
 ```
 
-4. Generate prisma types:
+7. Generate prisma types:
 
 ```sh
 pnpm generate:types
 ```
 
-6. Run locally:
+8. Run locally:
 
 ```sh
 pnpm start:dev
