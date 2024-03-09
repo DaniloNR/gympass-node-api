@@ -23,6 +23,7 @@ jobs:
           node-version: 20
           cache: "pnpm"
       - run: pnpm install --frozen-lockfile
+      - run: pnpm run generate:types
       - run: pnpm run test:e2e
         env:
           JWT_SECRET: testing
