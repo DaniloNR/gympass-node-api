@@ -15,8 +15,8 @@ importers:
         specifier: 8.0.0
         version: 8.0.0
       '@prisma/client':
-        specifier: 5.11.0
-        version: 5.11.0(prisma@5.17.0)
+        specifier: 5.17.0
+        version: 5.17.0(prisma@5.17.0)
       bcryptjs:
         specifier: 2.4.3
         version: 2.4.3
@@ -487,8 +487,8 @@ packages:
   '@polka/url@1.0.0-next.24':
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
 
-  '@prisma/client@5.11.0':
-    resolution: {integrity: sha512-SWshvS5FDXvgJKM/a0y9nDC1rqd7KG0Q6ZVzd+U7ZXK5soe73DJxJJgbNBt2GNXOa+ysWB4suTpdK5zfFPhwiw==}
+  '@prisma/client@5.17.0':
+    resolution: {integrity: sha512-N2tnyKayT0Zf7mHjwEyE8iG7FwTmXDHFZ1GnNhQp0pJUObsuel4ZZ1XwfuAYkq5mRIiC/Kot0kt0tGCfLJ70Jw==}
     engines: {node: '>=16.13'}
     peerDependencies:
       prisma: '*'
@@ -2333,7 +2333,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.24': {}
 
-  '@prisma/client@5.11.0(prisma@5.17.0)':
+  '@prisma/client@5.17.0(prisma@5.17.0)':
     optionalDependencies:
       prisma: 5.17.0
 
