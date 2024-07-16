@@ -22,7 +22,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/bcryptjs": "2.4.6",
-    "@types/node": "20.11.28",
+    "@types/node": "20.14.11",
     "@types/supertest": "6.0.2",
     "@typescript-eslint/eslint-plugin": "7.5.0",
     "@typescript-eslint/parser": "7.5.0",
