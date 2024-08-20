@@ -10,4 +10,4 @@ updates:
       - "dependencies"
     reviewers:
       - "DaniloNR"
-    versioning-strategy: "widen"
+    versioning-strategy: "increase"
