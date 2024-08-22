@@ -70,7 +70,8 @@ There is a additional workflow configured on this repository, the dependabot.
 A .npmrc is setup containing a rule to prevent any package from being updated
 when running a `> pnpm install`, instead, the updates are performed by dependabot
 on GitHub through pull requests weekly. If the tests pipelines pass, you can merge
-to update the dependencies.
+to update the dependencies. Also, whenever `package.json` updates, the badges on README
+are updated as well through a workflow called `update-badges.yml`.
 ## SOLID Principles
 The project is built using the SOLID principles, which are:
 - Single Responsibility Principle
