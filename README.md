@@ -1,7 +1,7 @@
 # Gympass Node API
 
 <!-- BADGES_START -->
-
+${BADGES_CONTENT}
 <!-- BADGES_END -->
 
 <!-- 
