@@ -50,10 +50,6 @@ jobs:
           ' README.md > updated_README.md
           mv updated_README.md README.md
 
-      - name: Clean up
-        run: |
-          rm badges_content.txt
-
       - name: Commit changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
