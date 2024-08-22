@@ -1,5 +1,10 @@
 # Gympass Node API
 
+<!-- BADGES_START -->
+
+<!-- BADGES_END -->
+
+<!-- 
 [![Node.js](https://img.shields.io/badge/Node.js-20.11.24-green?style=flat-square&logo=node.js)](https://nodejs.org/)
 [![Fastify](https://img.shields.io/badge/Fastify-4.26.2-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)
 [![Prisma](https://img.shields.io/badge/Prisma-5.10.2-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)
@@ -13,7 +18,7 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-5.10.2-blue?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
 [![Docker](https://img.shields.io/badge/Docker-25.0.3-blue?style=flat-square&logo=docker)](https://www.docker.com/)
 [![pnpm](https://img.shields.io/badge/pnpm-8.9.2-blue?style=flat-square&logo=pnpm)](https://pnpm.io/)
-
+-->
 **gympass-node-api** is a Node.js API designed to manage users' gym memberships
 across multiple gyms. It is built entirely in TypeScript and utilizes SOLID
 principles on its implementation.
