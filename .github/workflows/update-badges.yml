@@ -26,18 +26,28 @@ jobs:
       - name: Get package versions
         id: get-versions
         run: |
-          echo "NODE_VERSION=$(jq -r '.dependencies["node.js"] // .devDependencies["node.js"]' package.json)" >> $GITHUB_ENV
-          echo "FASTIFY_VERSION=$(jq -r '.dependencies.fastify // .devDependencies.fastify' package.json)" >> $GITHUB_ENV
-          echo "PRISMA_VERSION=$(jq -r '.dependencies.prisma // .devDependencies.prisma' package.json)" >> $GITHUB_ENV
-          # Add similar lines for other dependencies you want to track
+          echo "FASTIFY_VERSION=$(jq -r '.dependencies["fastify"] // .devDependencies["fastify"]' package.json)" >> $GITHUB_ENV
+          echo "PRISMA_VERSION=$(jq -r '.dependencies["@prisma/client"] // .devDependencies["prisma"]' package.json)" >> $GITHUB_ENV
+          echo "VITEST_VERSION=$(jq -r '.dependencies["vitest"] // .devDependencies["vitest"]' package.json)" >> $GITHUB_ENV
+          echo "SUPERTEST_VERSION=$(jq -r '.dependencies["supertest"] // .devDependencies["@types/supertest"]' package.json)" >> $GITHUB_ENV
+          echo "BCRYPTJS_VERSION=$(jq -r '.dependencies["bcryptjs"] // .devDependencies["@types/bcryptjs"]' package.json)" >> $GITHUB_ENV
+          echo "DAYJS_VERSION=$(jq -r '.dependencies["dayjs"] // .devDependencies["dayjs"]' package.json)" >> $GITHUB_ENV
+          echo "ZOD_VERSION=$(jq -r '.dependencies["zod"] // .devDependencies["zod"]' package.json)" >> $GITHUB_ENV
+          echo "ESLINT_VERSION=$(jq -r '.dependencies["eslint"] // .devDependencies["eslint"]' package.json)" >> $GITHUB_ENV
+          echo "DOTENV_VERSION=$(jq -r '.dependencies["dotenv"] // .devDependencies["dotenv"]' package.json)" >> $GITHUB_ENV
 
       - name: Generate Badges Content
         id: generate-badges
         run: |
-          echo "[![Node.js](https://img.shields.io/badge/Node.js-${{ env.NODE_VERSION }}-green?style=flat-square&logo=node.js)](https://nodejs.org/)" > badges_content.txt
-          echo "[![Fastify](https://img.shields.io/badge/Fastify-${{ env.FASTIFY_VERSION }}-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)" >> badges_content.txt
+          echo "[![Fastify](https://img.shields.io/badge/Fastify-${{ env.FASTIFY_VERSION }}-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)" > badges_content.txt
           echo "[![Prisma](https://img.shields.io/badge/Prisma-${{ env.PRISMA_VERSION }}-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)" >> badges_content.txt
-          # Add more badges here
+          echo "[![Vitest](https://img.shields.io/badge/Vitest-${{ env.VITEST_VERSION }}-red?style=flat-square)](https://github.com/vitejs/vitest)" >> badges_content.txt
+          echo "[![supertest](https://img.shields.io/badge/supertest-${{ env.SUPERTEST_VERSION }}-orange?style=flat-square)](https://github.com/visionmedia/supertest)" >> badges_content.txt
+          echo "[![bcryptjs](https://img.shields.io/badge/bcryptjs-${{ env.BCRYPTJS_VERSION }}-blue?style=flat-square)](https://github.com/dcodeIO/bcrypt.js)" >> badges_content.txt
+          echo "[![dayjs](https://img.shields.io/badge/dayjs-${{ env.DAYJS_VERSION }}-yellow?style=flat-square)](https://github.com/iamkun/dayjs)" >> badges_content.txt
+          echo "[![Zod](https://img.shields.io/badge/Zod-${{ env.ZOD_VERSION }}-green?style=flat-square)](https://github.com/colinhacks/zod)" >> badges_content.txt
+          echo "[![eslint](https://img.shields.io/badge/eslint-${{ env.ESLINT_VERSION }}-blue?style=flat-square&logo=eslint)](https://eslint.org/)" >> badges_content.txt
+          echo "[![dotenv](https://img.shields.io/badge/dotenv-${{ env.DOTENV_VERSION }}-yellow?style=flat-square)](https://github.com/motdotla/dotenv)" >> badges_content.txt
 
       - name: Update README badges
         run: |
