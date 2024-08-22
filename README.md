@@ -7,7 +7,7 @@
 [![pnpm](https://img.shields.io/badge/pnpm-9.0.0-blue?style=flat-square&logo=pnpm)](https://pnpm.io/)
 
 
-## dependencies
+## Dependencies
 <!-- BADGES_START -->
 [![Fastify](https://img.shields.io/badge/Fastify-4.26.2-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)
 [![Prisma](https://img.shields.io/badge/Prisma-5.17.0-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)
