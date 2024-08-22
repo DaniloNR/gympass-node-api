@@ -1,0 +1,50 @@
+name: Update Shields.io Badges
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+      - name: Get package versions
+        id: get-versions
+        run: |
+          echo "NODE_VERSION=$(jq -r '.dependencies["node.js"] // .devDependencies["node.js"]' package.json)" >> $GITHUB_ENV
+          echo "FASTIFY_VERSION=$(jq -r '.dependencies.fastify // .devDependencies.fastify' package.json)" >> $GITHUB_ENV
+          echo "PRISMA_VERSION=$(jq -r '.dependencies.prisma // .devDependencies.prisma' package.json)" >> $GITHUB_ENV
+          # Add similar lines for other dependencies you want to track
+
+      - name: Update README badges
+        run: |
+          BADGES_CONTENT=$(cat <<-END
+          [![Node.js](https://img.shields.io/badge/Node.js-${{ env.NODE_VERSION }}-green?style=flat-square&logo=node.js)](https://nodejs.org/)
+          [![Fastify](https://img.shields.io/badge/Fastify-${{ env.FASTIFY_VERSION }}-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)
+          [![Prisma](https://img.shields.io/badge/Prisma-${{ env.PRISMA_VERSION }}-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)
+          # Add more badges here
+          END
+          )
+          
+          sed -i '/<!-- BADGES_START -->/,/<!-- BADGES_END -->/c\<!-- BADGES_START -->\n${BADGES_CONTENT}\n<!-- BADGES_END -->' README.md
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions"
+          git commit -am "chore: update badges with latest package versions"
+          git push
