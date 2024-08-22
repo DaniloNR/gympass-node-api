@@ -1,8 +1,8 @@
-name: Update Shields.io Badges
+name: Update Shields.io Badges when dependencies change
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'package.json'
   workflow_dispatch:
 jobs:
   update-badges:
