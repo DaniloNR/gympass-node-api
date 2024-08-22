@@ -42,8 +42,17 @@ jobs:
       - name: Update README badges
         run: |
           badges=$(cat badges_content.txt)
-          awk -v badges="$badges" 'BEGIN {RS="<!-- BADGES_START -->.*<!-- BADGES_END -->"} NR==1 {print} {print "<!-- BADGES_START -->\n" badges "\n<!-- BADGES_END -->"}' README.md > updated_README.md
+          awk -v badges="$badges" '
+            BEGIN { badge_section = 0 }
+            /<!-- BADGES_START -->/ { badge_section = 1; print; print badges; next }
+            /<!-- BADGES_END -->/ { badge_section = 0 }
+            !badge_section { print }
+          ' README.md > updated_README.md
           mv updated_README.md README.md
+
+      - name: Clean up
+        run: |
+          rm badges_content.txt
 
       - name: Commit changes
         run: |
