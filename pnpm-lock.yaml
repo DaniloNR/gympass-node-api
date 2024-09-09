@@ -40,8 +40,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       '@types/node':
-        specifier: 22.5.0
-        version: 22.5.0
+        specifier: 22.5.4
+        version: 22.5.4
       '@types/supertest':
         specifier: 6.0.2
         version: 6.0.2
@@ -53,7 +53,7 @@ importers:
         version: 7.18.0(eslint@8.57.0)(typescript@5.5.4)
       '@vitest/coverage-v8':
         specifier: 1.3.1
-        version: 1.3.1(vitest@1.3.1(@types/node@22.5.0)(@vitest/ui@1.3.1))
+        version: 1.3.1(vitest@1.3.1(@types/node@22.5.4)(@vitest/ui@1.3.1))
       '@vitest/ui':
         specifier: 1.3.1
         version: 1.3.1(vitest@1.3.1)
@@ -74,10 +74,10 @@ importers:
         version: 5.5.4
       vite-tsconfig-paths:
         specifier: 5.0.1
-        version: 5.0.1(typescript@5.5.4)(vite@5.1.4(@types/node@22.5.0))
+        version: 5.0.1(typescript@5.5.4)(vite@5.1.4(@types/node@22.5.4))
       vitest:
         specifier: 1.3.1
-        version: 1.3.1(@types/node@22.5.0)(@vitest/ui@1.3.1)
+        version: 1.3.1(@types/node@22.5.4)(@vitest/ui@1.3.1)
 
 packages:
 
@@ -680,8 +680,8 @@ packages:
   '@types/methods@1.1.4':
     resolution: {integrity: sha512-ymXWVrDiCxTBE3+RIrrP533E70eA+9qu7zdWoHuOmGujkYtzf4HQF96b8nwHLqhuf4ykX61IGRIB38CC6/sImQ==}
 
-  '@types/node@22.5.0':
-    resolution: {integrity: sha512-DkFrJOe+rfdHTqqMg0bSNlGlQ85hSoh2TPzZyhHsXnMtligRWpxUySiyw8FY14ITt24HVCiQPWxS3KO/QlGmWg==}
+  '@types/node@22.5.4':
+    resolution: {integrity: sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==}
 
   '@types/superagent@8.1.4':
     resolution: {integrity: sha512-uzSBYwrpal8y2X2Pul5ZSWpzRiDha2FLcquaN95qUPnOjYgm/zQ5LIdqeJpQJTRWNTN+Rhm0aC8H06Ds2rqCYw==}
@@ -2569,7 +2569,7 @@ snapshots:
 
   '@types/methods@1.1.4': {}
 
-  '@types/node@22.5.0':
+  '@types/node@22.5.4':
     dependencies:
       undici-types: 6.19.8
 
@@ -2577,7 +2577,7 @@ snapshots:
     dependencies:
       '@types/cookiejar': 2.1.5
       '@types/methods': 1.1.4
-      '@types/node': 22.5.0
+      '@types/node': 22.5.4
 
   '@types/supertest@6.0.2':
     dependencies:
@@ -2667,7 +2667,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitest/coverage-v8@1.3.1(vitest@1.3.1(@types/node@22.5.0)(@vitest/ui@1.3.1))':
+  '@vitest/coverage-v8@1.3.1(vitest@1.3.1(@types/node@22.5.4)(@vitest/ui@1.3.1))':
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@bcoe/v8-coverage': 0.2.3
@@ -2682,7 +2682,7 @@ snapshots:
       std-env: 3.7.0
       test-exclude: 6.0.0
       v8-to-istanbul: 9.2.0
-      vitest: 1.3.1(@types/node@22.5.0)(@vitest/ui@1.3.1)
+      vitest: 1.3.1(@types/node@22.5.4)(@vitest/ui@1.3.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -2717,7 +2717,7 @@ snapshots:
       pathe: 1.1.2
       picocolors: 1.0.0
       sirv: 2.0.4
-      vitest: 1.3.1(@types/node@22.5.0)(@vitest/ui@1.3.1)
+      vitest: 1.3.1(@types/node@22.5.4)(@vitest/ui@1.3.1)
 
   '@vitest/utils@1.3.1':
     dependencies:
@@ -4062,13 +4062,13 @@ snapshots:
       '@types/istanbul-lib-coverage': 2.0.6
       convert-source-map: 2.0.0
 
-  vite-node@1.3.1(@types/node@22.5.0):
+  vite-node@1.3.1(@types/node@22.5.4):
     dependencies:
       cac: 6.7.14
       debug: 4.3.6
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.1.4(@types/node@22.5.0)
+      vite: 5.1.4(@types/node@22.5.4)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4079,27 +4079,27 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@5.0.1(typescript@5.5.4)(vite@5.1.4(@types/node@22.5.0)):
+  vite-tsconfig-paths@5.0.1(typescript@5.5.4)(vite@5.1.4(@types/node@22.5.4)):
     dependencies:
       debug: 4.3.6
       globrex: 0.1.2
       tsconfck: 3.0.3(typescript@5.5.4)
     optionalDependencies:
-      vite: 5.1.4(@types/node@22.5.0)
+      vite: 5.1.4(@types/node@22.5.4)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.1.4(@types/node@22.5.0):
+  vite@5.1.4(@types/node@22.5.4):
     dependencies:
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.12.0
     optionalDependencies:
-      '@types/node': 22.5.0
+      '@types/node': 22.5.4
       fsevents: 2.3.3
 
-  vitest@1.3.1(@types/node@22.5.0)(@vitest/ui@1.3.1):
+  vitest@1.3.1(@types/node@22.5.4)(@vitest/ui@1.3.1):
     dependencies:
       '@vitest/expect': 1.3.1
       '@vitest/runner': 1.3.1
@@ -4118,11 +4118,11 @@ snapshots:
       strip-literal: 2.0.0
       tinybench: 2.6.0
       tinypool: 0.8.2
-      vite: 5.1.4(@types/node@22.5.0)
-      vite-node: 1.3.1(@types/node@22.5.0)
+      vite: 5.1.4(@types/node@22.5.4)
+      vite-node: 1.3.1(@types/node@22.5.4)
       why-is-node-running: 2.2.2
     optionalDependencies:
-      '@types/node': 22.5.0
+      '@types/node': 22.5.4
       '@vitest/ui': 1.3.1(vitest@1.3.1)
     transitivePeerDependencies:
       - less
