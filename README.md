@@ -14,7 +14,7 @@
 [![Vitest](https://img.shields.io/badge/Vitest-1.3.1-red?style=flat-square)](https://github.com/vitejs/vitest)
 [![supertest](https://img.shields.io/badge/supertest-7.0.0-orange?style=flat-square)](https://github.com/visionmedia/supertest)
 [![bcryptjs](https://img.shields.io/badge/bcryptjs-2.4.3-blue?style=flat-square)](https://github.com/dcodeIO/bcrypt.js)
-[![dayjs](https://img.shields.io/badge/dayjs-1.11.10-yellow?style=flat-square)](https://github.com/iamkun/dayjs)
+[![dayjs](https://img.shields.io/badge/dayjs-1.11.13-yellow?style=flat-square)](https://github.com/iamkun/dayjs)
 [![Zod](https://img.shields.io/badge/Zod-3.23.8-green?style=flat-square)](https://github.com/colinhacks/zod)
 [![eslint](https://img.shields.io/badge/eslint-8.57.0-blue?style=flat-square&logo=eslint)](https://eslint.org/)
 [![dotenv](https://img.shields.io/badge/dotenv-16.4.5-yellow?style=flat-square)](https://github.com/motdotla/dotenv)
