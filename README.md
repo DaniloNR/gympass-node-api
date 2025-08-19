@@ -17,7 +17,7 @@
 [![dayjs](https://img.shields.io/badge/dayjs-1.11.13-yellow?style=flat-square)](https://github.com/iamkun/dayjs)
 [![Zod](https://img.shields.io/badge/Zod-3.23.8-green?style=flat-square)](https://github.com/colinhacks/zod)
 [![eslint](https://img.shields.io/badge/eslint-8.57.1-blue?style=flat-square&logo=eslint)](https://eslint.org/)
-[![dotenv](https://img.shields.io/badge/dotenv-16.4.5-yellow?style=flat-square)](https://github.com/motdotla/dotenv)
+[![dotenv](https://img.shields.io/badge/dotenv-16.5.0-yellow?style=flat-square)](https://github.com/motdotla/dotenv)
 <!-- BADGES_END -->
 
 **gympass-node-api** is a Node.js API designed to manage users' gym memberships
