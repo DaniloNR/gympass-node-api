@@ -9,15 +9,15 @@
 
 ## Dependencies
 <!-- BADGES_START -->
-[![Fastify](https://img.shields.io/badge/Fastify-5.2.1-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)
-[![Prisma](https://img.shields.io/badge/Prisma-6.7.0-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)
-[![Vitest](https://img.shields.io/badge/Vitest-1.6.1-red?style=flat-square)](https://github.com/vitejs/vitest)
-[![supertest](https://img.shields.io/badge/supertest-7.0.0-orange?style=flat-square)](https://github.com/visionmedia/supertest)
-[![bcryptjs](https://img.shields.io/badge/bcryptjs-2.4.3-blue?style=flat-square)](https://github.com/dcodeIO/bcrypt.js)
+[![Fastify](https://img.shields.io/badge/Fastify-5.5.0-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)
+[![Prisma](https://img.shields.io/badge/Prisma-6.14.0-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)
+[![Vitest](https://img.shields.io/badge/Vitest-3.2.4-red?style=flat-square)](https://github.com/vitejs/vitest)
+[![supertest](https://img.shields.io/badge/supertest-7.1.4-orange?style=flat-square)](https://github.com/visionmedia/supertest)
+[![bcryptjs](https://img.shields.io/badge/bcryptjs-3.0.2-blue?style=flat-square)](https://github.com/dcodeIO/bcrypt.js)
 [![dayjs](https://img.shields.io/badge/dayjs-1.11.13-yellow?style=flat-square)](https://github.com/iamkun/dayjs)
-[![Zod](https://img.shields.io/badge/Zod-3.23.8-green?style=flat-square)](https://github.com/colinhacks/zod)
-[![eslint](https://img.shields.io/badge/eslint-8.57.1-blue?style=flat-square&logo=eslint)](https://eslint.org/)
-[![dotenv](https://img.shields.io/badge/dotenv-16.5.0-yellow?style=flat-square)](https://github.com/motdotla/dotenv)
+[![Zod](https://img.shields.io/badge/Zod-4.0.17-green?style=flat-square)](https://github.com/colinhacks/zod)
+[![eslint](https://img.shields.io/badge/eslint-9.33.0-blue?style=flat-square&logo=eslint)](https://eslint.org/)
+[![dotenv](https://img.shields.io/badge/dotenv-17.2.1-yellow?style=flat-square)](https://github.com/motdotla/dotenv)
 <!-- BADGES_END -->
 
 **gympass-node-api** is a Node.js API designed to manage users' gym memberships
