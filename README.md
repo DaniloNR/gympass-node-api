@@ -11,7 +11,7 @@
 <!-- BADGES_START -->
 [![Fastify](https://img.shields.io/badge/Fastify-5.2.1-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)
 [![Prisma](https://img.shields.io/badge/Prisma-6.7.0-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)
-[![Vitest](https://img.shields.io/badge/Vitest-1.3.1-red?style=flat-square)](https://github.com/vitejs/vitest)
+[![Vitest](https://img.shields.io/badge/Vitest-1.6.1-red?style=flat-square)](https://github.com/vitejs/vitest)
 [![supertest](https://img.shields.io/badge/supertest-7.0.0-orange?style=flat-square)](https://github.com/visionmedia/supertest)
 [![bcryptjs](https://img.shields.io/badge/bcryptjs-2.4.3-blue?style=flat-square)](https://github.com/dcodeIO/bcrypt.js)
 [![dayjs](https://img.shields.io/badge/dayjs-1.11.13-yellow?style=flat-square)](https://github.com/iamkun/dayjs)
