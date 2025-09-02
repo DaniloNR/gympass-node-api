@@ -10,7 +10,7 @@
 ## Dependencies
 <!-- BADGES_START -->
 [![Fastify](https://img.shields.io/badge/Fastify-5.5.0-blue?style=flat-square&logo=fastify)](https://www.fastify.io/)
-[![Prisma](https://img.shields.io/badge/Prisma-6.14.0-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)
+[![Prisma](https://img.shields.io/badge/Prisma-6.15.0-orange?style=flat-square&logo=prisma)](https://www.prisma.io/)
 [![Vitest](https://img.shields.io/badge/Vitest-3.2.4-red?style=flat-square)](https://github.com/vitejs/vitest)
 [![supertest](https://img.shields.io/badge/supertest-7.1.4-orange?style=flat-square)](https://github.com/visionmedia/supertest)
 [![bcryptjs](https://img.shields.io/badge/bcryptjs-3.0.2-blue?style=flat-square)](https://github.com/dcodeIO/bcrypt.js)
